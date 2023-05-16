@@ -141,15 +141,15 @@ footer{grid-area: footer;}
     width:auto;
     height:auto;
     object-fit: cover;
-    transition: 6s;
+    transition: 2.5s;
     cursor: pointer;
     overflow: hidden;
  }
  .imgfondo:hover img{
-     transform: scale(1, 1.125);
-     filter: grayscale(2);
+     filter: grayscale(4);
+     transform: scale(1.1);    
  }
-
+ 
                             /* Main Nosotros */
 .main .noso{
     display: grid;
