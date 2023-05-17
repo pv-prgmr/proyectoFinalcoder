@@ -250,16 +250,13 @@ footer {
   background: linear-gradient(to bottom, rgb(126, 208, 235), transparent);
   padding: 1.5rem;
 }
-
 .nav img {
   display: flex;
 }
-
 .nav img:hover {
   animation: tilt 1s infinite;
 }
-
-@keyframes tilt {
+@keyframes "tilt" {
   30% {
     transform: scaleX(1.2) scaleY(0.7);
   }
@@ -275,7 +272,6 @@ footer {
   display: flex;
   gap: 2rem;
 }
-
 .nav a {
   text-decoration: none;
   color: rgba(20, 8, 3, 0.658);
@@ -284,13 +280,14 @@ footer {
   font-size: 2em;
   font-style: italic;
 }
-
 .nav a:hover {
   color: rgb(240, 129, 85);
   font-variant: small-caps;
 }
-
-.nav #toggle, .nav label {
+.nav #toggle {
+  display: none;
+}
+.nav label {
   display: none;
 }
 
@@ -321,7 +318,6 @@ footer {
   align-items: center;
   padding-left: 1em;
 }
-
 .redes h3 {
   margin-left: 1rem;
 }
@@ -373,13 +369,6 @@ footer {
 
 .txt {
   grid-area: txt;
-}
-
-.img {
-  grid-area: img;
-}
-
-.txt {
   display: flex;
   font-size: 3.5em;
   margin-left: 3rem;
@@ -388,12 +377,15 @@ footer {
   color: rgb(17, 7, 2);
 }
 
+.img {
+  grid-area: img;
+}
+
 .p:first-child::first-letter {
   font-size: 4rem;
   font-weight: bold;
   color: rgb(17, 8, 2);
 }
-
 .p span {
   color: rgb(230, 114, 106);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -417,7 +409,6 @@ footer {
   height: 35px;
   overflow: hidden;
 }
-
 .marquesina p {
   display: flex;
   justify-content: flex-end;
@@ -427,8 +418,7 @@ footer {
   flex-shrink: 0;
   animation: scrolling 35s linear infinite;
 }
-
-@keyframes scrolling {
+@keyframes "scrolling" {
   0% {
     transform: translateX(0);
   }
@@ -436,6 +426,7 @@ footer {
     transform: translateX(-100%);
   }
 }
+
 .loul {
   display: inline-flex;
   margin-top: 3em;
@@ -443,16 +434,13 @@ footer {
   justify-content: center;
   margin-left: 4em;
 }
-
 .loul img {
   border: 3.5px solid rgb(9, 4, 19);
   border-radius: 12.4px;
 }
-
 .loul img:hover {
   transform: scale(1.1);
 }
-
 .loul figcaption {
   display: inline-flex;
   margin-bottom: 1em;
@@ -465,7 +453,6 @@ figcaption h3 {
   color: rgb(207, 56, 56);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 figcaption p {
   margin-top: 10px;
   color: rgb(1, 4, 10);
@@ -476,12 +463,11 @@ figcaption p {
   display: block;
 }
 
-.carteras, .bolsos, .tote {
+.carteras {
   display: flex;
   margin: 2.5em;
   overflow: hidden;
 }
-
 .carteras h2 {
   color: rgb(26, 4, 2);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -489,27 +475,7 @@ figcaption p {
   font-weight: lighter;
   margin-bottom: 1em;
 }
-
-.bolsos h2 {
-  color: rgb(26, 4, 2);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
-  font-weight: lighter;
-  margin-bottom: 1em;
-  margin-right: 0.9em;
-  justify-content: flex-start;
-}
-
-.tote h2 {
-  color: rgb(26, 4, 2);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
-  font-weight: lighter;
-  margin-bottom: 1em;
-  margin-right: 2.2em;
-}
-
-.carteras img, .bolsos img, .tote img {
+.carteras img {
   display: flex;
   margin-left: 6em;
   padding: 0.5em;
@@ -521,15 +487,65 @@ figcaption p {
   height: 100%;
   cursor: pointer;
 }
-
 .carteras:hover img {
   transform: scale(1.2);
 }
 
+.bolsos {
+  display: flex;
+  margin: 2.5em;
+  overflow: hidden;
+}
+.bolsos h2 {
+  color: rgb(26, 4, 2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  margin-right: 0.9em;
+  justify-content: flex-start;
+}
+.bolsos img {
+  display: flex;
+  margin-left: 6em;
+  padding: 0.5em;
+  border: 3.5px solid rgb(192, 189, 196);
+  border-radius: 12.4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.8s;
+  height: 100%;
+  cursor: pointer;
+}
 .bolsos:hover img {
   transform: scale(1.2);
 }
 
+.tote {
+  display: flex;
+  margin: 2.5em;
+  overflow: hidden;
+}
+.tote h2 {
+  color: rgb(26, 4, 2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  margin-right: 2.2em;
+}
+.tote img {
+  display: flex;
+  margin-left: 6em;
+  padding: 0.5em;
+  border: 3.5px solid rgb(192, 189, 196);
+  border-radius: 12.4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.8s;
+  height: 100%;
+  cursor: pointer;
+}
 .tote:hover img {
   transform: scale(1.2);
 }
@@ -545,46 +561,36 @@ figcaption p {
 
 .imgcontact {
   grid-area: imgcontact;
-}
-
-.saludo {
-  grid-area: saludo;
-}
-
-.imgcontact {
   display: flex;
   margin-left: 9em;
 }
-
 .imgcontact img {
   border-radius: 12.4px;
   margin-top: 3em;
 }
 
 .saludo {
+  grid-area: saludo;
   display: inline-block;
   margin-right: 10em;
 }
-
 .saludo h2 {
   color: rgb(27, 9, 2);
   font-family: "Caveat", cursive;
   font-size: 3em;
 }
-
 .saludo h3 {
   color: rgb(65, 33, 21);
   font-family: "Caveat", cursive;
   font-size: 2.5em;
 }
-
 .saludo h4 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.5em;
   color: rgb(36, 28, 28);
 }
 
-input, textarea {
+input {
   width: 100%;
   padding: 12px 20px;
   margin-bottom: 20px;
@@ -594,7 +600,17 @@ input, textarea {
   font-size: 16px;
 }
 
-input[type=submit], input[type=reset] {
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type=submit] {
   background-color: #54aa82;
   color: white;
   padding: 12px 20px;
@@ -602,8 +618,17 @@ input[type=submit], input[type=reset] {
   border-radius: 4px;
   cursor: pointer;
 }
+input[type=submit]:hover {
+  background-color: #0cad62;
+}
 
 input[type=reset] {
+  background-color: #54aa82;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   background-color: rgba(194, 182, 15, 0.8980392157);
   color: white;
   padding: 12px 20px;
@@ -611,11 +636,6 @@ input[type=reset] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-input[type=submit]:hover {
-  background-color: #0cad62;
-}
-
 input[type=reset]:hover {
   background-color: #cc2e19;
 }/*# sourceMappingURL=style.css.map */
