@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* Estructura Areas Generales en Orden: Header , Footer y distintos Main de cada pagina */
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    animation: changebg 10s infinite alternate linear;
+}
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+@keyframes changebg {
+    0%{
+        background-color: $cabl;
+    }
+    25%{
+        background-color: $cb10;
+    }
+    50%{
+        background-color: $cb20;
+    }
+    75%{
+        background-color: $cb10;
+    }
+    100%{
+        background-color: $cabl;
+    }
+}
+.active {
+    font-weight: bold;
+    background-color: $cb20;
+    border-radius: 22.4px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .5em;
+}

@@ -1,0 +1,184 @@
+
+@media (max-width:40.625em){
+                                /* header */
+    .main .index{
+        max-width: 100%;
+        max-height: 667px;
+        padding-left: 0;
+        padding-top:0;
+    }
+    .nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        text-align: right;
+    }
+    .nav label{
+        display: inline-block;
+        color: $cabl;
+        cursor: pointer;
+    }
+    .nav #toggle:checked ~ .menu{
+        height: 90%;
+    }
+    .nav a{
+        font-weight: bold;
+        font-size: 1em;  
+    }
+    label .icono{
+        color: $cb30;
+        font-size: 1.5em;
+    }
+    .nav img , .logob img{
+        width: 30px;
+        height: 30px;
+    }
+                                /* footer */
+    .bottom{
+        grid-template-rows: 78px;
+    }
+    .redes img{
+        height: 30px;
+        width: 65px;
+    }
+    .redes h3{
+        font-size: .8em;
+    }
+    .txtb p{
+        font-size: .5em;
+        padding-right: 1em;
+        margin-bottom: 0px;
+    }
+                            /* nosotros */
+
+    .main .noso{
+        margin-top: 0;
+    }
+    .txt{
+        display: inline-flex;
+        font-size: 1em;
+        margin: .4rem;
+        align-items: center;
+        margin-top: .4em;
+        }
+        .txt .p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #271f1ebb;
+            }
+            .p:first-child::first-letter{
+                font-size: 1.5rem;
+                font-weight: normal;
+                color: $cane;
+                padding-left: .5em;
+            }
+    .imgn{
+        max-width: 100%;
+        height:15em;
+        width: auto;
+    }
+        /* lo ultimo */
+    .loul{
+        display: block;
+        margin-top: .5em;
+        width: 100%;
+        margin-left: 1.5em;
+        }
+        .loul img ,figcaption{
+            justify-content: center;
+            margin-left: 1em;
+            margin-bottom: 1.5em;
+        } 
+    .marquesina{
+        border-top: 2px solid $cane;
+        border-bottom: 2px solid $cane;
+        height: 33px;
+        overflow: hidden;
+        }
+        .marquesina p{
+            display: flex;
+            justify-content: end;
+            font-family:Arial, Helvetica, sans-serif; 
+            color: $cane;
+            font-size:  1em;
+            flex-shrink: 0;
+            animation: scrolling 5s linear infinite;
+            }
+            @keyframes scrolling {
+                0%{transform: translateX(0);}
+                100%{transform: translateX(-100%);}
+            }
+
+                            /* productos */
+
+    .prod{
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .carteras , .bolsos , .tote{
+        display: inline-block;
+        margin: 0%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .carteras h2, .bolsos h2, .tote h2{
+            display: inline-block;
+            color: $cb30;
+            font-size: 2em;
+            font-weight: lighter;
+            margin-left: 50px;
+        }
+        .carteras img , .bolsos img , .tote img{
+            display: flex;
+            max-width: 100%;
+            height: 25em;
+            width: auto;
+            margin-right: 0em;
+            margin-left: 3em;
+            margin-bottom: 1em;
+            padding:.3em;   
+            border: 1px solid $cagr;
+            border-radius: 12.4px;  
+        }
+    /* contacto */
+
+    .contact{
+        display: inline-block;
+        padding: 1em;
+    }
+    .imgcontact{
+        display:inline-block;
+        margin-left: 0em;
+        margin-bottom: 0em;
+        overflow: hidden;
+        }
+        .imgcontact img{
+            object-fit: cover;
+            transition: 3s;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            }
+            .imgcontact:hover img{
+                transform: scale(1.2);
+            }
+    .saludo{
+        display: inline-block;
+        margin-right: 1em;
+        }
+        .saludo h2{     
+            font-family: 'Caveat', cursive;
+            font-size: 1.92em;
+        }
+        .saludo h3{
+            font-family: 'Caveat', cursive;
+            font-size: 1.7em;
+        }
+        .saludo h4 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }                       
+}
