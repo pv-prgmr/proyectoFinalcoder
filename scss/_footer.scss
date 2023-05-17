@@ -4,9 +4,9 @@
     "redes txt logob";
     grid-template-columns: 50% 40% 10%; 
     grid-template-rows: 80px;
-    background: linear-gradient(to bottom, transparent,rgb(126, 208, 235));
+    background: linear-gradient(to bottom, transparent,$cb50);
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(148, 146, 146);
+    color: $cagr;
 }
 .redes{grid-area: redes;}
 .txt{grid-area: txt;}
@@ -17,7 +17,7 @@
     align-items: center;
     padding-left: 1em;
     h3{
-    margin-left: 1rem;
+        margin-left: 1rem;
     }
 }
 .txtb{

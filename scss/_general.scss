@@ -21,24 +21,24 @@ footer{grid-area: footer;}
 
 @keyframes changebg {
     0%{
-        background-color: #fdf8f871;
+        background-color: $cabl;
     }
     25%{
-        background-color: #bdc9dfd2;
+        background-color: $cb10;
     }
     50%{
-        background-color: rgb(126, 208, 235);
+        background-color: $cb20;
     }
     75%{
-        background-color: #9db2c450;
+        background-color: $cb10;
     }
     100%{
-        background-color: #77828b91;
+        background-color: $cabl;
     }
 }
 .active {
     font-weight: bold;
-    background-color: rgba(136, 178, 218, 0.342);
+    background-color: $cb20;
     border-radius: 22.4px;
     padding-left: 1em;
     padding-right: 1em;
