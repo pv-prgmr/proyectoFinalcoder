@@ -256,7 +256,7 @@ footer {
 .nav img:hover {
   animation: tilt 1s infinite;
 }
-@keyframes "tilt" {
+@keyframes tilt {
   30% {
     transform: scaleX(1.2) scaleY(0.7);
   }
@@ -418,7 +418,7 @@ footer {
   flex-shrink: 0;
   animation: scrolling 35s linear infinite;
 }
-@keyframes "scrolling" {
+@keyframes scrolling {
   0% {
     transform: translateX(0);
   }

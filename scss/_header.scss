@@ -16,7 +16,7 @@
 		&:hover {
 			animation: tilt 1s infinite;
 		}
-        @keyframes "tilt" {
+        @keyframes tilt {
             30% {
                 transform: scaleX(1.2) scaleY(0.7);
             }

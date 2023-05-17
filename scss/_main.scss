@@ -89,7 +89,7 @@
 		animation: scrolling 35s linear infinite;
 	}
     
-    @keyframes "scrolling" {
+    @keyframes scrolling {
         0% {
             transform: translateX(0);
         }
