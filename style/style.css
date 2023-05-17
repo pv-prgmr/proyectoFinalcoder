@@ -38,9 +38,11 @@ footer{grid-area: footer;}
 }
 .active {
     font-weight: bold;
-    border: 2px solid rgb(135, 133, 238);
-    border-radius: 12.4px;
-    padding: .2em;
+    background-color: rgba(136, 178, 218, 0.342);
+    border-radius: 22.4px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .5em;
 }
                             /* header */
 .top{
@@ -311,8 +313,10 @@ figcaption p{
 .imgcontact{
     display: flex;
     margin-left: 9em;
-    margin-bottom: 4em;
-    overflow: hidden;
+}
+.imgcontact img{
+    border-radius: 12.4px;
+    margin-top: 3em;
 }
 .saludo{
     display: inline-block;
